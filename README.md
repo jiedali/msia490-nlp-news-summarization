@@ -1,8 +1,10 @@
 # **News Summarization**
 
--MSiA 490 Text Analytics Project
--Created by Jieda Li
--November 2020 
+MSiA 490 Text Analytics Project
+
+Created by Jieda Li
+
+November 2020 
 
 
 
