@@ -48,7 +48,7 @@ Detailed experimentation results can be found at /deliverables/msia490_nlp_proje
 
 Follow instructions below to run the app and generate a summary of your own news article!
 
-### First go to project directory
+### After download the repo, first go to project directory
   
   cd msia490-nlp-news-summarization
 
@@ -56,6 +56,6 @@ Follow instructions below to run the app and generate a summary of your own news
 
   python api.py
 
-### Now You should be able to access the api at: 
+### Now You should be able to access the api at your local host: http://127.0.0.1:5000/
 
 
