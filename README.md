@@ -2,7 +2,7 @@
 
 MSiA 490 Text Analytics Project
 
-Created by Jieda Li
+Jieda Li
 
 November 2020 
 
