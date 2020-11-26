@@ -13,11 +13,11 @@ My goal of this project is to build a news headline generator exploaring both ab
 
 ### **Approach**: 
 
-Method 1 (Main Focus): Abstractive Model: Encoder-Decoder based, bi-directional LSTM with Attention for Encoder, basic unidirectional LSTM for decoder.
+**Method 1 Abstractive Model**: Encoder-Decoder based, bi-directional LSTM with Attention for Encoder, basic unidirectional LSTM for decoder.
 
-Method 2: Extractive Model: Use pre-trained BERT to create sentence embeddings, then perform K-means clustering on the sentence embeddings, choose the sentence that is closest ot eh center of each cluster centroid as the summary. Use can specify how many sentences they would like to be in the summary.
+**Method 2: Extractive Model**: Use pre-trained BERT to create sentence embeddings, then perform K-means clustering on the sentence embeddings, choose the sentence that is closest ot eh center of each cluster centroid as the summary. Use can specify how many sentences they would like to be in the summary.
 
-Method3: Extractive Model: TextRank
+**Method3: Extractive Model**: TextRank
 
 ### **Experimentation**:
 
