@@ -1,4 +1,4 @@
-# **News Summarization**
+# **News Headline Generation**
 
 MSiA 490 Text Analytics Project
 
@@ -9,15 +9,19 @@ November 2020
 
 
 ### **Goal**: 
-My goal of this project is to build a news summarizer that facilitate efficient news reading.
+My goal of this project is to build a news headline generator exploaring both abstractive and extractive text summarization technique.
 
 ### **Approach**: 
-My main approach is perform extractive summary by using a pre-trained BERT model to create sentence embedding, then perform K-means clustering on the sentence embeddings and finally select the sentence that is closest to the center of each cluster centroid as the summary sentence.
 
-By specifying the number of clusters, user can pick how many sentences they want to have in the final summary. 
+Method 1 (Main Focus): Abstractive Model: Encoder-Decoder based, bi-directional LSTM with Attention for Encoder, basic unidirectional LSTM for decoder.
+
+Method 2: Extractive Model: Use pre-trained BERT to create sentence embeddings, then perform K-means clustering on the sentence embeddings, choose the sentence that is closest ot eh center of each cluster centroid as the summary. Use can specify how many sentences they would like to be in the summary.
+
+Method3: Extractive Model: TextRank
 
 ### **Experimentation**:
-I have experimented with various models on creating embeddings (BERT and GPT-2) and clustering methods (K-means and Gaussian Mixture Models). I also compared the results from this approach to the well-known TextRank method.
+
+Detailed experimentation results can be found at /deliverables/msia490_nlp_project_paper.pdf
  
 
 ## Directory structure 
@@ -41,3 +45,7 @@ I have experimented with various models on creating embeddings (BERT and GPT-2) 
 ```
 
 ## Instructions on How to Run
+
+Follow instructions below to run the app and generate a summary of your own news article!
+
+
