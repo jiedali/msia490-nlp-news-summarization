@@ -4,12 +4,9 @@ from flasgger import Swagger
 from flask import Flask, request, jsonify, Response
 from flask_cors import CORS
 from summarizer import Summarizer
-# from liblinear.predict import sentiment
 
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.DEBUG)
 logger = logging.getLogger(__name__)
-
-# NOTE this import needs to happen after the logger is configured
 
 
 # Initialize the Flask application
@@ -38,10 +35,10 @@ def notfound(error):
 
 @application.route('/v1/summarize', methods=['POST'])
 def summarize_text():
-    """Run sentiment classification given text.
+    """Run news summarization given input raw text
         ---
         parameters:
-          - name: body
+          - text: body of the news article
             in: body
             schema:
               id: text
@@ -64,7 +61,7 @@ def summarize_text():
           40x:
             description: Client error
           200:
-            description: Sentiment Classification Response
+            description: Summary generation response
             examples:
                           [
 {
@@ -89,30 +86,7 @@ def summarize_text():
         return flask.jsonify({"status": "success", "text": result})
 
 
-# @application.route('/v1/sentiment/categories', methods=['GET'])
-# def sentiment_categories():
-#     """Possible sentiment categories.
-#         ---
-#         definitions:
-#           CategoriestResponse:
-#           Project:
-#             properties:
-#               categories:
-#                 type: object
-#         responses:
-#           40x:
-#             description: Client error
-#           200:
-#             description: Sentiment Classification Response
-#             examples:
-#                           [
-# {
-#   "categories": [1,2,3],
-#   "sentiment": "1"
-# }
-# ]
-#         """
-#     return flask.jsonify({"": list(range(1,6))})
+
 
 
 if __name__ == '__main__':
