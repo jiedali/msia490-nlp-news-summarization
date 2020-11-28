@@ -50,7 +50,7 @@ def summarize_text():
             description: the required text for POST method
             required: true
         definitions:
-          SentimentResponse:
+          SummaryResponse:
           Project:
             properties:
               status:
