@@ -39,7 +39,7 @@ Detailed experimentation results can be found at /deliverables/msia490_nlp_proje
 │
 ├── models/                           <- BERT model used for generate the sentence embeddings
 │
-├── src/                              <- Source code
+├── results/                          <- Results generated including summaries from the abstractive model, validation results of abstractive model, training curve
 │
 
 ```
