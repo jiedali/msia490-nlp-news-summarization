@@ -58,3 +58,5 @@ Follow instructions below to run the app and generate a summary of your own news
 ### Now You should be able to access the api at your local host: http://127.0.0.1:5000/
 
 
+## Instructions on run the dockerized application
+
