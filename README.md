@@ -102,7 +102,9 @@ Follow steps below to generate summary output using the model
 ```bash
  /content/gdrive/MyDrive/glove/glove.42B.300d.txt
 ``` 
-* Download the trained model from my Google Drive link, save it here
+* Download the trained model from my Google Drive Link:
+https://drive.google.com/drive/folders/1-HrqUphcxMT-Ti2Ra4EO_3Elztcz_3rm?usp=sharing
+, save it here:
 ```bash
  /content/gdrive/MyDrive/saved_model/
 ``` 
@@ -110,7 +112,7 @@ Follow steps below to generate summary output using the model
 ```bash
  /content/gdrive/MyDrive/sumdata/train/valid.article.filter.test.txt
 ``` 
-Of you can rename it anything you like, but if you change the name, you also need to change the file path in the code.
+You can rename the text file, but if you change the name, you also need to change the file path in the code.
 
 * run the following cell to generate summary prediction using my trained model object:
 ```
@@ -181,7 +183,11 @@ with tf.Session() as sess:
 
     print('Summaries have been generated')
 ``` 
+* Generated summary will be stored in a separate text file called result.txt, under:
 
+```bash
+ /content/gdrive/MyDrive/result.txt
+``` 
 
 
 
