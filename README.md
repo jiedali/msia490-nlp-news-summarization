@@ -13,13 +13,13 @@ November 2020
 
 ### **Approach**: 
 
-##### **Method 1 Abstractive Model**: 
+#### **Method 1 Abstractive Model**: 
 * Encoder-Decoder model, bi-directional LSTM with Attention for Encoder, basic unidirectional LSTM for decoder.
 
-##### **Method 2: Extractive Model**: 
+#### **Method 2: Extractive Model**: 
 * Use pre-trained BERT to create sentence embeddings, then perform K-means clustering on the sentence embeddings, choose the sentence(s) closest to the center of cluster centroid as the summary.
 
-##### **Method3: Extractive Model**: 
+#### **Method3: Extractive Model**: 
 * TextRank, a graph-based approach similar to PageRank based on similarity-weighted link between each pair of sentences
 
 ### **Experiments and Results**:
@@ -36,8 +36,6 @@ November 2020
 ├── data                              <- Folder that contains data used for generating the summary
 │
 ├── deliverables/                     <- Paper write-up and Presentation slides 
-│
-├── figures/                          <- Generated figures for paper and slides                             <- Source code
 │
 ├── results/                          <- Results generated including summaries from the abstractive model, validation results of abstractive model, training curve
 
@@ -94,6 +92,8 @@ Alternatively, you can do following steps to run the app without using Docker
 #### Now You should be able to access the api at your local host: http://127.0.0.1:5000/apidocs/
 
 ## Instructions on generating summary with the Encoder-Decoder Model
+
+The training, evaluation and summary prediction using the encoder-decoder Model is done on Google Colab via Jupyter notebook.
 
 
 
