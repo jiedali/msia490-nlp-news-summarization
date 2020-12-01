@@ -21,7 +21,6 @@ result = model.run_embeddings(data,num_sentences=1)
 # do PCA on the result matrix and get PCA scores
 
 
-
 # project each of the sentence embedding onto the 2 principle components
 score = np.dot(result,pca.components_.transpose())
 

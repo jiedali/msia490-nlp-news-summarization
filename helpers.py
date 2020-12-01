@@ -1,5 +1,11 @@
 import matplotlib.pyplot as plt
 
+def process_input(raw_input_path):
+	with open(raw_input_path, "r") as myfile:
+	# with open("data/example3.txt", "r") as myfile:
+		data = myfile.read().replace('\n', '')
+
+	return data
 
 def plot():
 	"""helper function to plot the training curve"""

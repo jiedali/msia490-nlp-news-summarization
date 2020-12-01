@@ -9,20 +9,22 @@ November 2020
 
 
 ### **Goal**: 
-My goal of this project is to build a news headline generator exploaring both abstractive and extractive text summarization technique.
+* My goal of this project is to build a news headline generator exploring both abstractive and extractive text summarization technique.
 
 ### **Approach**: 
 
-**Method 1 Abstractive Model**: Encoder-Decoder based, bi-directional LSTM with Attention for Encoder, basic unidirectional LSTM for decoder.
+##### **Method 1 Abstractive Model**: 
+* Encoder-Decoder model, bi-directional LSTM with Attention for Encoder, basic unidirectional LSTM for decoder.
 
-**Method 2: Extractive Model**: Use pre-trained BERT to create sentence embeddings, then perform K-means clustering on the sentence embeddings, choose the sentence that is closest ot eh center of each cluster centroid as the summary. Use can specify how many sentences they would like to be in the summary.
+##### **Method 2: Extractive Model**: 
+* Use pre-trained BERT to create sentence embeddings, then perform K-means clustering on the sentence embeddings, choose the sentence(s) closest to the center of cluster centroid as the summary.
 
-**Method3: Extractive Model**: TextRank
+##### **Method3: Extractive Model**: 
+* TextRank, a graph-based approach similar to PageRank based on similarity-weighted link between each pair of sentences
 
-### **Experimentation**:
+### **Experiments and Results**:
 
-Detailed experimentation results can be found at /deliverables/msia490_nlp_project_paper.pdf
- 
+* Detailed experimentation results can be found at /deliverables/msia490_nlp_project_paper.pdf
 
 ## Directory structure 
 
@@ -35,9 +37,7 @@ Detailed experimentation results can be found at /deliverables/msia490_nlp_proje
 │
 ├── deliverables/                     <- Paper write-up and Presentation slides 
 │
-├── figures/                          <- Generated figures for paper and slides
-│
-├── models/                           <- BERT model used for generate the sentence embeddings
+├── figures/                          <- Generated figures for paper and slides                             <- Source code
 │
 ├── results/                          <- Results generated including summaries from the abstractive model, validation results of abstractive model, training curve
 
@@ -47,16 +47,28 @@ Detailed experimentation results can be found at /deliverables/msia490_nlp_proje
 
 Follow instructions below to run the app and generate a summary of your own news article!
 
-### After download the repo, first go to project directory
-  
-  cd msia490-nlp-news-summarization
+#### After download the repo, first install the required packages
 
-### launch the app
+```bash
+ pip install -r requirements.txt
+```
+#### Go to the root directory
 
-  python api.py
+```bash
+ cd msia490-nlp-news-summarization
+``` 
 
-### Now You should be able to access the api at your local host: http://127.0.0.1:5000/
+#### Run following command to launch the app
+
+```bash
+ python api.py
+``` 
+
+#### Now You should be able to access the api at your local host: http://127.0.0.1:5000/apidocs/
+
+#### Here is the screen shot of the swagger documentation interface:
 
 
-## Instructions on run the dockerized application
+
+## Instructions on running the dockerized application
 
