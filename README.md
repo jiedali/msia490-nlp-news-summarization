@@ -31,9 +31,9 @@ November 2020
 ```
 ├── README.md                         <- You are here
 ├── requirements.txt                  <- Python package dependencies 
-├── app                               <- contains Dockerfile for running the app using Docker Container
+├── app/                              <- contains Dockerfile for running the app using Docker Container
 │   - Dockerfile
-├── data                              <- Folder that contains data used for generating the summary
+├── data/                             <- Folder that contains data used for generating the summary
 │
 ├── deliverables/                     <- Paper write-up and Presentation slides 
 │
