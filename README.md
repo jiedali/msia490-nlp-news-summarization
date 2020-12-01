@@ -103,12 +103,12 @@ Follow steps below to generate summary output using the model
  /content/gdrive/MyDrive/glove/glove.42B.300d.txt
 ``` 
 * Download the trained model from my Google Drive Link:
-https://drive.google.com/drive/folders/1-HrqUphcxMT-Ti2Ra4EO_3Elztcz_3rm?usp=sharing
+* https://drive.google.com/drive/folders/1-HrqUphcxMT-Ti2Ra4EO_3Elztcz_3rm?usp=sharing
 , save it here:
 ```bash
  /content/gdrive/MyDrive/saved_model/
 ``` 
-* Save the news article you wish to summarize as a text file and name it valid.article.filter.test.txt, save it at following location:
+* Save the news article you wish to summarize as a text file and name it valid.article.filter.test.txt, save it here:
 ```bash
  /content/gdrive/MyDrive/sumdata/train/valid.article.filter.test.txt
 ``` 
@@ -188,7 +188,11 @@ with tf.Session() as sess:
 ```bash
  /content/gdrive/MyDrive/result.txt
 ``` 
+## References
 
-
-
+Following repos/code are referenced for this project:
+* Lecture7.zip example code
+* https://github.com/dongjun-Lee/text-summarization-tensorflow
+* https://github.com/DeepsMoseli/Bidirectiona-LSTM-for-text-summarization-
+* https://github.com/dmmiller612/bert-extractive-summarizer
 
