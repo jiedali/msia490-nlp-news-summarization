@@ -1,11 +1,11 @@
-from summarizer import Summarizer
+from text_rank import text_rank_summarize
 from helpers import process_input
 
-model = Summarizer()
+
 
 def summarize(text):
 	"""returns the top 1 sentence from the summary"""
-	result = model(text,num_sentences=1)
+	result = text_rank_summarize(text,num_sentences=1)
 
 	return result
 
@@ -15,6 +15,6 @@ def summarize(text):
 if __name__ =="__main__":
 
 	text = process_input('./data/example_file.txt')
-	result = model(text, num_sentences=1)
+	result = text_rank_summarize(text, num_sentences=1)
 	print("The generated summary is:")
 	print(result)

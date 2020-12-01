@@ -45,7 +45,7 @@ November 2020
 
 ## Instructions on How to Run the app
 
-Follow instructions below to run the app and generate a summary of your own news article!
+Follow instructions below to run the app and generate a summary of your own choice of news article!
 
 #### After download the repo, first install the required packages
 
@@ -76,3 +76,22 @@ You can click "try it out" and input your raw text string in the field of "text"
 
 ## Instructions on running the dockerized application
 
+Go to root directoy
+```bash
+ cd msia490-nlp-news-summarization
+``` 
+
+Run following command to build docker image
+```bash
+ docker build -f app/Dockerfile -t new_sum .
+``` 
+
+Run following command to run a docker container and launch the API
+```bash
+ docker run new_sum python3 api.py
+``` 
+
+Now you will be able to do the exact same thing, viewing the app at:
+http://127.0.0.1:5000/apidocs/
+
+The only thing different is now you are running it from a docker container.

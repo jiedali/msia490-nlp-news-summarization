@@ -1,9 +1,13 @@
+Flask==1.1.1
 numpy==1.16.3
-torch==1.0.1
 spacy==2.1.3
 transformers==2.2.2
 Cython==0.29.10
 tqdm==4.32.2
 neuralcoref==4.0
-argparse
-scikit-learn
+argparse==1.4.0
+scikit-learn==0.23.2
+flasgger
+flask_cors==3.0.9
+pytextrank==2.0.3
+matplotlib==3.2.2
